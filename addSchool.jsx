@@ -12,7 +12,7 @@ const AddSchool = () => {
             formData.append('state', data.state);
             formData.append('contact', data.contact);
             formData.append('email_id', data.email_id);
-            formData.append('image', data.image[0]); // Assuming 'image' is the name of the file input
+            formData.append('image', data.image[0]); 
 
             const response = await fetch('/api/addSchool', {
                 method: 'POST',
